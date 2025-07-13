@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color:#5c4d7d ;
+    text-align: center;
+
+}
+.container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    
+}
+#new-btn{
+     padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+.msg-container{
+    height: 120vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+
+
+/* Home Page */
+
+
+#midd{
+    margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  
+      background: linear-gradient(135deg,#001524);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  overflow: hidden;
+}
+
+
+.scrolling-text-container {
+  width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 30px;
+}
+
+.scrolling-text {
+  font-size: 2.5rem;
+ background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0, #ff0080);
+   background-size: 600% 100%;
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ animation: scrollTextLeftToRight 10s linear infinite, colorCycle 3s ease-in-out infinite;  
+}
+
+
+ @keyframes scrollTextLeftToRight {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes colorCycle {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+.start-button {
+   display: inline-block;
+      padding: 14px 40px;
+      padding-bottom: -20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(155deg, #27748c, #03354a);
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.heading-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #00ffd5;
+    }
+
+    .heading-section p {
+      font-size:1.5rem;
+      max-width: 600px;
+      margin: 0 auto 15px;
+      line-height: 1.8;
+      color: #e0e0e0;
+    }
+    
+
+
+/* Responsive */
+
+ @media screen and (max-width:500px) {
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color:#5c4d7d ;
+    text-align: center;
+
+}
+.container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    
+}
+#new-btn{
+     padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+.msg-container{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+/* Home Page */
+
+
+#midd{
+    margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg,#001524);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  overflow: hidden;
+}
+
+
+.scrolling-text-container {
+  width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 30px;
+}
+
+.scrolling-text {
+  font-size: 1.3rem;
+ background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0, #ff0080);
+   background-size: 600% 100%;
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+          animation: scrollTextLeftToRight 10s linear infinite, colorCycle 3s ease-in-out infinite;  
+}
+
+
+ @keyframes scrollTextLeftToRight {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes colorCycle {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+.start-button {
+   display: inline-block;
+      padding: 8px 10px;
+      /* padding-bottom: -20px; */
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(155deg, #27748c, #03354a);
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+ .heading-section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #00ffd5;
+    }
+
+    .heading-section p {
+      font-size: 0.8rem;
+      width: 100vmin;
+
+      line-height: normal;
+    
+      position: relative;
+      color: #e0e0e0;
+    }
+ }
